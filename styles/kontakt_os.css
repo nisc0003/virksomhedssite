@@ -3,6 +3,99 @@
   margin: 0;
 }
 
+/*kontkt os*/
+.kontakt-section {
+  max-width: 800px;
+  margin: 50px auto; /* Centreret med luft */
+  padding: 1rem;
+}
+
+.kontakt-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0c315c;
+  font-family: lato;
+}
+
+.kontakt-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0c315c;
+  font-family: hind;
+}
+
+.kontakt-email {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0c315c;
+}
+
+.kontakt-email a {
+  color: #0069c5;
+  text-decoration: none;
+}
+
+.kontakt-email a:hover {
+  text-decoration: underline;
+}
+
+/* Afdelinger - Jylland og Sjælland */
+
+.afdelinger_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #e2f0fa;
+}
+
+.hvid_box {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  position: relative;
+}
+
+.jylland_box,
+.sjælland_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jylland_img,
+.sjælland_img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.afdeling_h3 {
+  font-size: 14px;
+  font-family: lato;
+  color: #0c315c;
+}
+
+.kontaktinfo_p {
+  font-size: 13px;
+  font-family: hind;
+  color: #0c315c;
+}
+
+@media (min-width: 768px) {
+  .hvid_box {
+    flex-direction: row;
+    padding: 30px;
+    gap: 40px;
+    max-width: 1000px;
+  }
+}
+
+/* formular*/
 .kontaktformular_h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -20,9 +113,9 @@
   border-radius: 15px;
   margin-top: 100px;
   font-family: lato;
+  margin-bottom: 100px;
 }
 
-/* Form Layout */
 .row {
   display: flex;
   gap: 1rem;
@@ -57,4 +150,29 @@ button {
 
 button:hover {
   background: #00509e;
+}
+
+@media (min-width: 768px) {
+  .kontaktformular_h1 {
+    font-size: 2.5rem;
+    top: -60px;
+  }
+
+  .form-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+  }
+
+  .row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  button {
+    width: 75%;
+  }
 }

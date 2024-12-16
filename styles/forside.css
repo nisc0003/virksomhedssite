@@ -1,0 +1,107 @@
+/* Hero Sektion */
+.hero {
+  background-image: url("../assets/hero_billede.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Fuldt viewport højde */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 2rem;
+  z-index: 2; /* Sørger for, at teksten ligger ovenpå baggrunden */
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: lato;
+  text-align: left;
+}
+
+.hero-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: lato;
+}
+
+.hero-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+/* Info Sektion - Container */
+.info-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+}
+
+/* Info Bokse */
+.info-box {
+  flex: 1;
+  height: 7rem;
+  padding: 1rem;
+  background-color: rgba(29, 40, 14, 0.5);
+  color: #fff;
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  transition: height 0.3s ease, background-color 0.3s ease; /* Glidende effekt */
+}
+
+/* Hover Effekt - Første boks vokser */
+.info-box:first-child:hover {
+  height: 8rem;
+  background-color: rgba(29, 40, 14, 0.8);
+  cursor: pointer;
+}
+
+/* Hover Effekt - Anden boks vokser */
+.info-box:last-child:hover {
+  height: 8rem;
+  background-color: rgba(29, 40, 14, 0.8);
+  cursor: pointer;
+}
+
+.info-box:first-child,
+.info-box:last-child {
+  align-self: flex-end; /* Sørger for, at begge bokse starter fra bunden */
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: hind;
+}
