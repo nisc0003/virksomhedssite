@@ -3,34 +3,34 @@
   background-image: url("../assets/hero_billede.png");
   background-size: cover;
   background-position: center;
-  height: 100vh; /* Fuldt viewport højde */
-  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  padding: 1rem;
   text-align: left;
 }
 
 .hero-content {
-  max-width: 600px;
-  padding: 2rem;
-  z-index: 2; /* Sørger for, at teksten ligger ovenpå baggrunden */
+  max-width: 90%;
+  padding: 1rem;
+  z-index: 2;
   text-align: left;
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #fff;
-  font-family: lato;
-  text-align: left;
+  font-family: "Lato", sans-serif;
 }
 
 .hero-text {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: #fff;
 }
 
@@ -42,7 +42,7 @@
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
   text-decoration: none;
-  font-family: lato;
+  font-family: "Lato", sans-serif;
 }
 
 .hero-button:hover {
@@ -50,49 +50,40 @@
   cursor: pointer;
 }
 
-/* Info Sektion - Container */
+/* Info Sektion */
 .info-section {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 0.2rem;
+  flex-direction: column;
+  gap: 0.1rem;
   padding: 0 0.2rem;
   box-sizing: border-box;
 }
 
-/* Info Bokse */
 .info-box {
   flex: 1;
-  height: 7rem;
+  height: 6rem;
   padding: 1rem;
   background-color: rgba(29, 40, 14, 0.5);
   color: #fff;
   text-align: left;
   font-size: 1rem;
+  font-family: hind;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-sizing: border-box;
   position: relative;
-  transition: height 0.3s ease, background-color 0.3s ease; /* Glidende effekt */
+  transition: height 0.3s ease, background-color 0.3s ease; /* Glidende overgang */
 }
 
-/* Hover Effekt - Første boks vokser */
-.info-box:first-child:hover {
-  height: 8rem;
-  background-color: rgba(29, 40, 14, 0.8);
-  cursor: pointer;
-}
-
-/* Hover Effekt - Anden boks vokser */
+.info-box:first-child:hover,
 .info-box:last-child:hover {
   height: 8rem;
   background-color: rgba(29, 40, 14, 0.8);
-  cursor: pointer;
 }
 
 .info-box:first-child,
@@ -102,6 +93,18 @@
 
 .info-box p {
   margin: 0;
-  font-size: 1.6rem;
-  font-family: hind;
+  font-size: 1.3rem;
+  font-family: "Hind", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .info-section {
+    flex-direction: row;
+    gap: 0.2rem;
+    padding: 0 0.2rem;
+  }
+
+  .info-box {
+    height: 7rem;
+  }
 }
