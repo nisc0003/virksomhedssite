@@ -1,0 +1,144 @@
+header {
+  display: grid;
+  grid-template-columns: 130px 1fr 40px;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  padding: 5px;
+  position: fixed;
+  outline: solid 1px #0c315c;
+}
+
+#logo_link {
+  width: 130px;
+  padding-left: 30px;
+}
+
+#menu {
+  grid-column: 2/3;
+  margin-right: 5px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu_links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu_links a {
+  text-decoration: none;
+  list-style: none;
+  font-family: Lato;
+  font-size: 15px;
+  color: #0c315c;
+}
+
+.menu_link_box {
+  background-color: white;
+  color: #0c315c;
+  padding: 33px 20px;
+  font-size: 15px;
+}
+
+#menu_links a:hover {
+  font-weight: bold;
+}
+
+.dropdown_indhold {
+  display: none;
+  top: 101%;
+  background-color: white;
+  position: absolute;
+  outline: solid 1px #0c315c;
+}
+
+.dropdown_indhold a {
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  /* outline: solid 1px #0c315c; */
+}
+
+.dropdown_indhold a:hover {
+  font-weight: 400;
+}
+
+#forside_dropdown:hover .dropdown_indhold {
+  display: block;
+}
+
+#produkter_dropdown:hover .dropdown_indhold {
+  display: block;
+}
+
+#baredygtighed_dropdown:hover .dropdown_indhold {
+  display: block;
+}
+
+#sprog {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#sprog a {
+  padding: 5px;
+}
+
+.flag {
+  width: 12px;
+}
+
+#burger {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #0c315c;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+@media (max-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu_links {
+    display: none;
+  }
+
+  #sprog {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    padding-right: 8px;
+  }
+
+  #burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  #burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  #burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+}
