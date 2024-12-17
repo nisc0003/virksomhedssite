@@ -158,6 +158,8 @@ header {
   padding: 5px;
   position: fixed;
   outline: solid 1px #0c315c;
+  background-color: white;
+  z-index: 100;
 }
 
 #logo_link {
@@ -190,7 +192,7 @@ header {
 .menu_link_box {
   background-color: white;
   color: #0c315c;
-  padding: 33px 20px;
+  padding: 31px 20px;
   font-size: 15px;
 }
 
