@@ -9,11 +9,172 @@
     <link rel="stylesheet" href="styles/produkt.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <a href="index.html">
+        <img
+          id="logo_link"
+          src="assets/logo.png"
+          alt="firmaet's logo og navn, med slogan 'together we close the loop'"
+        />
+      </a>
+      <nav id="menu">
+        <ul id="menu_links">
+          <li id="forside_dropdown">
+            <a class="menu_link_box" href="index.html">FORSIDE </a>
+            <div class="dropdown_indhold">
+              <a class="dropdown_liste" href="">LEDIGE STILLINGER</a>
+              <a class="dropdown_liste" href="">AFDELING JYLLAND</a>
+              <a class="dropdown_liste" href="">AFDELING SJÆLLAND</a>
+              <a class="dropdown_liste" href="">OM OS</a>
+              <a class="dropdown_liste" href="">KONTAKT OS</a>
+              <a class="dropdown_liste" href="">NYHEDER</a>
+              <a class="dropdown_liste" href="">HANDELSBETINGELSER</a>
+              <a class="dropdown_liste" href="">PRIVATLIVS- OG COOKIEPOLITIK</a>
+            </div>
+          </li>
+          <li><a class="menu_link_box" href="service.html">SERVICE</a></li>
+          <li id="produkter_dropdown">
+            <a class="menu_link_box" href="overordnet_produktside.html">PRODUKTER</a>
+            <div class="dropdown_indhold">
+              <a class="dropdown_liste" href="produktside.html">IBC RECO</a>
+              <a class="dropdown_liste" href="">IBC LØNRECO</a>
+              <a class="dropdown_liste" href="">IBC REBOTTLED</a>
+              <a class="dropdown_liste" href="">IBC FOOD</a>
+              <a class="dropdown_liste" href="">IBC ADBLUE</a>
+              <a class="dropdown_liste" href="">IBC EX</a>
+              <a class="dropdown_liste" href="">PLASTTROMLER</a>
+              <a class="dropdown_liste" href="">PLASTLÅGFADE</a>
+              <a class="dropdown_liste" href="">PLASTDUNKE</a>
+              <a class="dropdown_liste" href="">STÅLTROMLER</a>
+              <a class="dropdown_liste" href="">TRÆPALLER</a>
+              <a class="dropdown_liste" href="">TILBEHØR</a>
+              <a class="dropdown_liste" href="">R-HDPE</a>
+              <a class="dropdown_liste" href="">PRODUKT DATABLADE</a>
+            </div>
+          </li>
+          <li><a class="menu_link_box" href="emballage.html">EMBALLAGE RETUR</a></li>
+          <li id="baredygtighed_dropdown">
+            <a class="menu_link_box" href="">BÆREDYGTIGHED</a>
+            <div class="dropdown_indhold">
+              <a class="dropdown_liste" href="">PRODUCENTANSVAR</a>
+              <a class="dropdown_liste" href="">CIRKULÆR ØKONOMI</a>
+              <a class="dropdown_liste" href="">MILJØPOLITIK</a>
+              <a class="dropdown_liste" href="">CO2 BEREGNING</a>
+            </div>
+          </li>
+          <li><a class="menu_link_box" href="">WEBSHOP</a></li>
+        </ul>
+        <div id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <div id="sprog">
+        <a href="">
+          <img class="flag" src="assets/dansk_flag.png" alt="dansk flag" />
+        </a>
+        <a href="">
+          <img class="flag" src="assets/engelsk_flag.png" alt="engelsk flag" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div id="specifikt_produkt_grid">
+        <section id="IBC_sektion">
+          <h1>IBC RECO</h1>
+          <img id="IBC_img" src="assets/ibc_reco.webp" alt="IBC RECO plasttank" />
+          <div id="variabler_grid">
+            <p>Volumen</p>
+            <div id="volumen_box">
+              <div class="tekstbox">
+                <p>300L</p>
+              </div>
+              <div class="tekstbox">
+                <p>600L</p>
+              </div>
+              <div class="tekstbox">
+                <p>800L</p>
+              </div>
+              <div class="tekstbox">
+                <p>1000L</p>
+              </div>
+              <div class="tekstbox">
+                <p>1200L</p>
+              </div>
+            </div>
+            <p>Type</p>
+            <div id="type_box">
+              <div id="UN" class="tekstbox"></div>
+              <div id="standart1" class="tekstbox">
+                <p id="standart">STANDART</p>
+              </div>
+            </div>
+            <p>Bundventil</p>
+            <div id="bundventil_box">
+              <div id="DN50" class="tekstbox">
+                <p>DN50 (2”)</p>
+              </div>
+              <div id="DN80" class="tekstbox">
+                <p>DN80 (3”)</p>
+              </div>
+            </div>
+            <p>Toplåg</p>
+            <div id="toplog_box">
+              <div id="mm150" class="tekstbox">
+                <p>150mm</p>
+              </div>
+              <div id="mm225" class="tekstbox">
+                <p>225mm</p>
+              </div>
+              <div id="udluftning" class="tekstbox">
+                <p id="udluftning2">UDLUFTNING</p>
+              </div>
+            </div>
+            <p>Pal</p>
+            <div id="pal_box">
+              <div id="trapal" class="tekstbox">
+                <p>TRÆPAL</p>
+              </div>
+              <div id="staalpal" class="tekstbox">
+                <p>STÅLPAL</p>
+              </div>
+              <div id="plastpal" class="tekstbox">
+                <p>PLASTPAL</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="palletanke_sektion">
+          <div id="lysegrøn_box_1"></div>
+          <div id="palletanke_grid">
+            <h2>Vaskede palletanke</h2>
+            <p>
+              Rekonditionerede IBC er den mest populære type palletank. Vores
+              rekonditioneringsproces består i vask og tæthedstest af plastbeholder, samt rengøring
+              af fuldt galvaniseret gitterbur, pal og øvrige dele. Om nødvendigt udskiftes låg,
+              ventiler eller kapsler.
+            </p>
+            <p>
+              Du sænker Jeres CO2 balance med op til 67% og sparer op til 60% i forhold til en
+              fabriksny palletank.
+            </p>
+            <a id="datablade_cta" href="">DATABLADE PÅ PRODUKTET</a>
+            <img
+              id="evip"
+              src="assets/evip.png"
+              alt="quality concern og evip certifiseringsmærke "
+            />
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
