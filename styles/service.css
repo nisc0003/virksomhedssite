@@ -3,6 +3,24 @@
   padding-top: 80px;
   position: relative;
 }
+.lottie_h1 {
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.som_skaber_værdi_sektion {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.som_skaber_værdi_sektion h1 {
+  margin-bottom: 20px;
+}
+
+.som_skaber_værdi_sektion p {
+  margin-bottom: 20px;
+}
 
 /* knap */
 .button {
@@ -15,6 +33,7 @@
   text-decoration: none;
   font-family: "Lato", sans-serif;
   transition: background-color 0.3s ease;
+  margin-bottom: 40px;
 }
 
 .button:hover {
@@ -25,7 +44,14 @@
   background-color: rgba(226, 240, 250, 1);
 }
 
+.emballagelosninger_sektion h2 {
+  margin-left: 40px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
 .service_front {
+  position: relative;
   background-color: white;
   border-radius: 30px;
   padding-bottom: 30px;
@@ -44,9 +70,46 @@
   object-fit: cover;
 }
 
-/* .service_front img:hover {
-  opacity: 0%;
-} */
+.service_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  background-size: cover;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+  padding: 20px;
+  margin: 50px;
+}
+
+.indsamling,
+.genbrug,
+.handel,
+.recycling {
+  position: relative;
+  overflow: hidden;
+}
+
+.indsamling:hover .service_hover,
+.genbrug:hover .service_hover,
+.handel:hover .service_hover,
+.recycling:hover .service_hover {
+  opacity: 1;
+}
+
+.hvad_siger_andre_sektion {
+  margin-top: 50px;
+}
+.lagerhus_img {
+  height: 280px;
+  object-fit: cover;
+  object-position: bottom;
+}
 
 .brenntag {
   display: grid;
@@ -71,12 +134,61 @@
   place-self: center;
 }
 
-/* ting der skal på når den er i computer tilstand */
+@media (min-width: 768px) {
+  /* ting der skal på når den er i computer tilstand */
 
-/* .lottie_h1 {
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  max-width: 45vw;
-} */
+  .lottie_h1 {
+    color: white;
+    position: absolute;
+    bottom: 1vw;
+    max-width: 85vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .som_skaber_værdi_sektion {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .som_skaber_værdi_sektion p {
+    max-width: 300px;
+  }
+
+  .emballagelosninger_sektion h2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 20px;
+  }
+
+  .emballagelosninger_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 3vw;
+  }
+
+  .service_front {
+    margin: 0px;
+  }
+
+  .service_hover {
+    margin: 0px;
+  }
+
+  .hvad_siger_andre_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hvad_siger_andre_grid h2 {
+    font-size: 56px;
+  }
+
+  .lagerhus_img {
+    height: auto;
+  }
+}
