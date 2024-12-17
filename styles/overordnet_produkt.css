@@ -7,11 +7,13 @@ header {
   padding: 5px;
   position: fixed;
   outline: solid 1px #0c315c;
+  background-color: white;
 }
 
 #logo_link {
   width: 130px;
   padding-left: 30px;
+  background-color: white;
 }
 
 #menu {
@@ -41,6 +43,7 @@ header {
   color: #0c315c;
   padding: 33px 20px;
   font-size: 15px;
+  background-color: white;
 }
 
 #menu_links a:hover {
