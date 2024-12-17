@@ -15,7 +15,7 @@ html {
 
 h1 {
   font-family: Lato;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 56px;
   color: var(---tekstfarve);
 }
@@ -24,6 +24,7 @@ h2 {
   font-family: Lato;
   font-size: 40px;
   color: var(---tekstfarve);
+  font-weight: 400;
 }
 
 h3 {
@@ -40,8 +41,9 @@ h4 {
 
 p {
   font-family: Hind;
-  font-size: 20px;
+  font-size: 18px;
   color: var(---tekstfarve);
+  font-weight: 100;
 }
 
 dt {
