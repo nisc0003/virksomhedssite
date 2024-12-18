@@ -1,0 +1,171 @@
+.baggrundsbillede_karrusel {
+  padding-top: 80px;
+}
+
+.lad_os_bortskaffe_grid {
+  background-color: rgba(217, 217, 217, 1);
+  padding: 30px;
+}
+
+.lad_os_bortskaffe_grid h1 {
+  margin-bottom: 20px;
+}
+
+.lad_os_bortskaffe_grid p {
+  margin-bottom: 40px;
+}
+
+/* knap */
+.button {
+  display: inline-block;
+  background-color: rgba(0, 105, 197, 1);
+  color: white;
+  padding: 1rem 3.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+}
+
+.button:hover {
+  background-color: rgba(113, 184, 245, 1);
+}
+
+.indsamling_sektion {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 60px;
+  position: relative;
+}
+
+.billede4 {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.indsamling_indhold {
+  background-color: rgba(226, 240, 250, 1);
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.kontakt_link_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.kontakt_button {
+  display: block;
+  margin: auto;
+  background-color: rgba(0, 105, 197, 1);
+  color: white;
+  width: 10rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.kontakt_button:hover {
+  background-color: rgba(113, 184, 245, 1);
+}
+
+@media (min-width: 1333px) {
+  .emballage_retur_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .baggrundsbillede_karrusel {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .lad_os_bortskaffe_grid {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 100px;
+    padding: 0px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    padding-top: 120px;
+    align-self: start;
+    z-index: 1;
+    position: relative;
+  }
+
+  .lad_os_bortskaffe_grid h1 {
+    margin-bottom: 30px;
+  }
+
+  .lad_os_bortskaffe_grid p {
+    margin-bottom: 15px;
+  }
+
+  .button_grid {
+    margin-top: 40px;
+    display: grid;
+  }
+
+  .button {
+    display: block;
+    margin: auto;
+  }
+
+  .lad_os_bortskaffe_grid p {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .indsamling_sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    background-color: rgba(226, 240, 250, 1);
+  }
+
+  .kontakt_button {
+    width: 14rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  .billede4 {
+    grid-column: 4 / span 2;
+    grid-row: 1;
+    position: relative;
+    top: -50px;
+  }
+  .indsamling_indhold {
+    padding-top: 50px;
+    grid-column: 1 / span 3;
+    padding-left: 12vw;
+    padding-right: 10vw;
+  }
+  .indsamling_indhold h2 {
+    margin-bottom: 30px;
+  }
+
+  .indsamling_indhold p {
+    margin-bottom: 25px;
+  }
+
+  .kontakt_link_grid > div:first-child {
+    justify-self: start;
+  }
+
+  .kontakt_link_grid > div:nth-child(2) {
+    justify-self: end;
+  }
+}
